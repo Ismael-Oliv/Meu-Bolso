@@ -1,5 +1,6 @@
 import React from "react";
 
+import { HighLighCard } from "../../components/HighLightCard";
 import {
   Container,
   Header,
@@ -10,6 +11,7 @@ import {
   UserGreeting,
   UserName,
   Icon,
+  HighLighCards,
 } from "./style";
 
 export function Dashboard() {
@@ -33,6 +35,26 @@ export function Dashboard() {
           <Icon name="power" />
         </UserWrapper>
       </Header>
+      <HighLighCards>
+        <HighLighCard
+          title="Entradas"
+          amount="R$ 18.300,00"
+          lastTransaction="Ultima entrada dia 13 de abril"
+          type="up"
+        />
+        <HighLighCard
+          title="Saidas"
+          amount="R$ 11.400,00"
+          lastTransaction="Ultima entrada dia 13 de abril"
+          type="down"
+        />
+        <HighLighCard
+          title="Total"
+          amount="R$ 77.400,00"
+          lastTransaction="Ultima entrada dia 13 de abril"
+          type="total"
+        />
+      </HighLighCards>
     </Container>
   );
 }

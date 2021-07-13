@@ -27,8 +27,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar
-        barStyle="dark-content"
-        backgroundColor={theme.colors.background}
+        barStyle="light-content"
+        backgroundColor={theme.colors.primary}
       />
       <Dashboard />
     </ThemeProvider>
